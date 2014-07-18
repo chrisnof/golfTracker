@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.noffke.golfTracker" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Golf Tracker</name>
+    <description>
+        A simple application that you can use to track specific golfers on their PGA events.
+    </description>
+    <author email="chris@noffke.com" href="http://www.noffke.com">
+        Golf Tracker
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+	<preference name="Fullscreen" value="true" />
+	<icon src="res/icon.png" />
+	<platform name="android">
+              <icon src="res/ldpi.png" density="ldpi" />
+              <icon src="res/mdpi.png" density="mdpi" />
+              <icon src="res/hdpi.png" density="hdpi" />
+              <icon src="res/xhdpi.png" density="xhdpi" />
+     </platform>
+</widget>
