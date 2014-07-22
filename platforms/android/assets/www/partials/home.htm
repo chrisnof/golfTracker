@@ -1,0 +1,19 @@
+<div>
+    <img src="img/1_home.png" class="adjusted" alt="" />
+	<div ng-if="gettingRegData" class="waiting"><img src="img/spinner.gif" alt="checking..." /></br>checking...</div>
+	<div class="formArea" style="text-align: center;">
+	         {{vip.EventName}}
+		<br/>
+		<div class="bigger">
+	        {{vip.Count}}
+			<br/>
+		</div>
+		  <div class="animate-show" ng-hide="status" style="color: green">
+		    Ready to Scan!!
+		  </div>
+		<div ng-style="setColor(status)" class="bigger animate-show" ng-show="status"  ng-click="resetStatus()">
+	        {{status}}
+	        <div class="smaller animate-show">{{msg}}</div>
+		</div>
+	</div>
+</div>

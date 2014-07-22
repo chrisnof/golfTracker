@@ -5,13 +5,16 @@
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
     <icon density="ldpi" src="res/ldpi.png" />
     <icon density="mdpi" src="res/mdpi.png" />
     <icon density="hdpi" src="res/hdpi.png" />
     <icon density="xhdpi" src="res/xhdpi.png" />
     <name>Golf Tracker</name>
     <description>
-        A simple application that you can use to track specific golfers on their PGA events.
+        A simple application that you can use to track the location of all your lost golf balls.
     </description>
     <author email="chris@noffke.com" href="http://www.noffke.com">
         Golf Tracker

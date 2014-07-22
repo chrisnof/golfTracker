@@ -1,0 +1,14 @@
+<div>
+	<div ng-if="savingRData" class="waiting"><img src="img/spinner.gif" alt="saving..." /></br>saving...</div>
+	<div class="formEdit">
+		<br/>
+	        <input ng-model="ball.BallName" type="text" required autocomplete="off" placeholder="ball name" />
+		<br/>
+	        <div ng-model="ball.Location"></div>
+		<br/>
+		<br/>
+	        <a href="" ng-click="cancel()" class="formAction">cancel</a>
+	        <a href="" ng-click="reset()" class="formAction">reset</a>
+        	<a href="" ng-click="update(edit)" class="formAction">save</a>
+	</div>
+</div>
