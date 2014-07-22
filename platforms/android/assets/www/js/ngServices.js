@@ -1,6 +1,5 @@
 // data service for calls to web services
-angular.module('ngApp')
-    .service('ngService', ['$http', function($http) {
+ngApp.service('ngService', ['$http', function($http) {
 	//this.getRegData = function(rfid, success, failure) {
     //	if(rfid) 
     //	{

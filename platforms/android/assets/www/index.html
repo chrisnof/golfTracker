@@ -10,26 +10,12 @@
     <title>Golf Tracker</title>
 </head>
 <body>
-    <div id="onNfcReady" class="eventParent" style="top: 0px; left: 0px;">
-        <p class="event good">NFC Device Ready</p>
-        <p class="event bad">NFC Device Not Ready</p>
-    </div>
     <div id="onInternetReady" class="eventParent" style="top: 12px; left: 0px;">
         <p class="event good">Internet Available</p>
         <p class="event bad">Internet Connection Not Available</p>
     </div>
-    <div class="app">
-        <h1>Golf Ball Tracker</h1>
-        <form name="frm" ng-controller="mainCtrl">
-            <br />
-            <div>
-                <a href="#/edit">Add Location</a>
-            </div>
-            <br />
-            <div>
-                <a href="" ng-click="getLocation()">Get Current</a>
-            </div>
-        </form>
+    <div class="app" ng-view>
+    
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -38,7 +24,6 @@
     <script type="text/javascript" src="js/ngDialog.min.js"></script>
     <script type="text/javascript" src="js/ngApp.js"></script>
     <script type="text/javascript" src="js/ngControllers.js"></script>
-    <script type="text/javascript" src="js/ngServices.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>

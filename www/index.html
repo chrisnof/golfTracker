@@ -14,19 +14,8 @@
         <p class="event good">Internet Available</p>
         <p class="event bad">Internet Connection Not Available</p>
     </div>
-    <div class="app" ng-controller="mainCtrl">
-        <h1>Golf Ball Tracker</h1>
-        <form name="frm">
-            <br />
-            <div>
-                <a href="#/edit">Add Location</a>
-            </div>
-            <br />
-            <div>
-                <a href="" ng-click="getLocation()">Get Current</a>
-            </div>
-        </form>
-        <div>{{locationInfo}}</div>
+    <div class="app" ng-view>
+    
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

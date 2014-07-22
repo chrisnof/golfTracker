@@ -13,12 +13,11 @@ var app = {
     onInternetReady: function () {
 
         var networkState = navigator.connection.type;
-        console.log('networkState: ' + networkState);
+        //console.log('networkState: ' + networkState);
 
         // Connection.NONE
         if (networkState == 'none') {
             app.receivedEvent('onInternetReady bad');
-            //alert("An unexpected error occurred connecting to the server \n\nThe most likely source of the error is an loss of Internet connection.  To resolve this, try:\n\t- closing this application \n\t- verify the Internet connection availability \n\t- restart application")
         }
         else
             app.receivedEvent('onInternetReady good');

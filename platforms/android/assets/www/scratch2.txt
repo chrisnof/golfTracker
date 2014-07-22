@@ -1,0 +1,4 @@
+
+            <div ng-model="location"></div>
+    <script type="text/javascript" src="js/ngServices.js"></script>
+	
