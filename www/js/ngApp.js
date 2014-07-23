@@ -1,9 +1,13 @@
 ﻿/*global angular */
 /*jshint globalstrict: true*/
 var ngApp = angular.module('ngApp', ['ngRoute','ngDialog']);
-// configure our routes
-ngApp.config(['$routeProvider', function ($routeProvider) {
 
+        
+// configure our routes
+ngApp.config(['$routeProvider',  function ($routeProvider) {
+
+	// $locationProvider.html5Mode(true);
+	
     // default
     $routeProvider
         .when('/home', {

@@ -1,4 +1,5 @@
 <div>
+    <div ng-if="gettingData" class="waiting"><img src="img/spinner.gif" alt="getting location..." /></br>getting location...</div>
     <h1>Golf Ball Tracker</h1>
     <form name="frm">
         <br />
@@ -10,5 +11,19 @@
             <a href="" ng-click="getLocation()">Get Current</a>
         </div>
     	<div>{{locationInfo}}</div>
+    	
+        <br />
+        <br />
+        <h2 ng-show="balls.length > 0">Lost Balls:</h2>
+        <div class="row" data-ng-repeat="b in balls">
+                <span>{{b.ballName}}</span>
+            |
+                <span>{{b.location.lat}}</span>
+            |
+                <span>{{b.location.log}}</span>
+            |
+                <span>{{b.location.id}}</span>
+
+        </div>
     </form>
 </div>

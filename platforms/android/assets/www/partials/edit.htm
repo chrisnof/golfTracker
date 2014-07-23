@@ -1,18 +1,18 @@
 <div>
-	<div ng-if="savingRData" class="waiting"><img src="img/spinner.gif" alt="saving..." /></br>saving...</div>
+	<div ng-if="gettingData" class="waiting"><img src="img/spinner.gif" alt="getting location..." /></br>getting location...</div>
     <h1>Add/Edit Golf Ball</h1>
 	<form class="formEdit">
 		<br/>
 		<br/>
-	        <input ng-model="ball.BallName" type="text" required autocomplete="off" placeholder="ball name" />
+	        <input ng-model="ball.ballName" type="text" required autocomplete="off" placeholder="ball name" />
 		<br/>
-    		<div>{{locationInfo}}</div>
+    		<div>{{ball.location.lat}}</div>
+    		<div>{{ball.location.log}}</div>
 		<br/>
 		<br/>
 		<br/>
-	    <a href="#home" class="formAction">Cancel</a>
-        <a href="" ng-click="getLocation()" class="formAction">Get</a>
-        <a href="" ng-click="update(ball)" class="formAction">Save</a>
+	    <a href="#home" class="formAction">Back</a>
+        <a href="" ng-click="save()" class="formAction">Save</a>
 		<br/>
 		<br/>
 		<br/>

@@ -13,7 +13,7 @@
     <icon density="mdpi" src="res/mdpi.png" />
     <icon density="hdpi" src="res/hdpi.png" />
     <icon density="xhdpi" src="res/xhdpi.png" />
-    <name>Golf Tracker</name>
+    <name>Golf Ball Tracker</name>
     <description>
         A simple application that you can use to track the location of all your lost golf balls.
     </description>

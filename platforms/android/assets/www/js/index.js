@@ -11,16 +11,17 @@ var app = {
     },
 
     onInternetReady: function () {
-
-        var networkState = navigator.connection.type;
-        //console.log('networkState: ' + networkState);
-
-        // Connection.NONE
-        if (networkState == 'none') {
-            app.receivedEvent('onInternetReady bad');
-        }
-        else
-            app.receivedEvent('onInternetReady good');
+		if(navigator.connection){
+	        var networkState = navigator.connection.type;
+	        //console.log('networkState: ' + networkState);
+	
+	        // Connection.NONE
+	        if (networkState == 'none') {
+	            app.receivedEvent('onInternetReady bad');
+	        }
+	        else
+	            app.receivedEvent('onInternetReady good');
+		}
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.noffke.golfTracker" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Golf Tracker</name>
+    <name>Golf Ball Tracker</name>
     <description>
         A simple application that you can use to track the location of all your lost golf balls.
     </description>
