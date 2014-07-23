@@ -5,6 +5,7 @@ ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
 	function ($scope, $rootScope, $routeParams) {
 	
 	    $scope.locationInfo = '';
+	    $scope.locationObj = {};
 	    var balls = JSON.parse(localStorage.getItem('myBalls'));
 	    if (!balls) {
 	        balls = {};
@@ -35,8 +36,15 @@ ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
         };
 	    
 	    $scope.getLocation = function () {
-	        $scope.locationInfo = 'testing';
-		    //navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });
+	        //$scope.locationInfo = 'testing';
+		    navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });
 	    };
+	    
+		// clears scope variables
+		$scope.reset = function () {
+			$scope.locationInfo = "";
+			scope.locationObj = {};
+			$scope.ball = { BallName: "", Location: {});
+		};
 
 }]);

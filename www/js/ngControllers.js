@@ -44,7 +44,7 @@ ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
 		$scope.reset = function () {
 			$scope.locationInfo = "";
 			scope.locationObj = {};
-			$scope.ball = { BallName: "", Location: {});
+			$scope.ball = { BallName: "", Location: {}};
 		};
 
 }]);
