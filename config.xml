@@ -9,12 +9,13 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-	<preference name="Fullscreen" value="true" />
+	<preference name="Fullscreen" value="true"  />
 	<icon src="res/icon.png" />
 	<platform name="android">
-              <icon src="res/ldpi.png" density="ldpi" />
-              <icon src="res/mdpi.png" density="mdpi" />
-              <icon src="res/hdpi.png" density="hdpi" />
-              <icon src="res/xhdpi.png" density="xhdpi" />
+			<preference name="ErrorUrl" value="error.html"/>
+            <icon src="res/ldpi.png" density="ldpi" />
+            <icon src="res/mdpi.png" density="mdpi" />
+            <icon src="res/hdpi.png" density="hdpi" />
+            <icon src="res/xhdpi.png" density="xhdpi" />
      </platform>
 </widget>

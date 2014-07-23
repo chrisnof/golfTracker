@@ -43,7 +43,7 @@ ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
 		// clears scope variables
 		$scope.reset = function () {
 			$scope.locationInfo = "";
-			scope.locationObj = {};
+			$scope.locationObj = {};
 			$scope.ball = { BallName: "", Location: {}};
 		};
 

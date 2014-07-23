@@ -8,6 +8,7 @@
     <feature name="NetworkStatus">
         <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
+    <preference name="ErrorUrl" value="error.html" />
     <icon density="ldpi" src="res/ldpi.png" />
     <icon density="mdpi" src="res/mdpi.png" />
     <icon density="hdpi" src="res/hdpi.png" />

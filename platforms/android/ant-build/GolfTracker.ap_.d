@@ -32,6 +32,7 @@ C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\_where-is-w
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\cordova.js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\cordova_plugins.js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\css \
+C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\error.html \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\img \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\index.html \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js \
@@ -40,6 +41,7 @@ C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\plugins
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\css\index.css \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\css\ngDialog.css \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\img\golf-ball-m.png \
+C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\img\spinner.gif \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular-route.js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular.min.js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular.min.js.map \
