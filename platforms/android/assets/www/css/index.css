@@ -30,7 +30,7 @@ body {
                                    /* offset horizontal: half of text area width */
 }
 a {
-    padding: 20px;
+    padding: 5px;
 }	
 .event {
     color: #333333;
@@ -64,6 +64,9 @@ h1 {
 }
 .rowHead {
     font-weight:bold;
+}
+.row {
+    padding: 3px;
 }
 .waiting{
 	position: absolute;
