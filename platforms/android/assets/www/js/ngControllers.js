@@ -5,7 +5,6 @@ ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
 	function ($scope, $rootScope, $routeParams) {
 		$scope.gettingData = false;
 	    $scope.locationInfo = '';
-	    $scope.locationObj = {};
 	    $scope.balls = JSON.parse(localStorage.getItem('myBalls'));
 	    if (!$scope.balls) {
 	        $scope.balls = [];
@@ -27,7 +26,17 @@ ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
 	                  'Timestamp: ' + position.timestamp ;
     	    }
     	    $scope.locationInfo = result;
-    	    $scope.locationObj = { lat: position.coords.latitude, log: position.coords.longitude, id: position.timestamp}
+    	    $scope.gettingData = false;
+    	    $scope.$apply();
+        };
+        var onSuccessAdd = function (position) {
+            if (position) {
+                $scope.ball.location = { lat: position.coords.latitude, log: position.coords.longitude, id: position.timestamp };
+                $scope.balls.push($scope.ball);
+                localStorage.setItem('myBalls', JSON.stringify($scope.balls));
+            }
+            $scope.gettingData = false;
+            $scope.$apply();
         };
     
         // onError Callback receives a PositionError object
@@ -36,12 +45,12 @@ ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
             var result = 'code: ' + error.code + '\n' +
                   'message: ' + error.message + '\n';
             $scope.locationInfo = result;
+            $scope.$apply();
         };
 	    
 	    $scope.getLocation = function () {
 			$scope.gettingData = true;
 		    navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });
-			$scope.gettingData = false;
 	    };
 	    
 		$scope.reset = function () {
@@ -50,14 +59,21 @@ ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
 			$scope.ball = { ballName: "", location: {}};
 		};
 
+		$scope.resetAll = function () {
+		    if (confirm('Are you sure that you want to do this?')) {
+		        $scope.locationInfo = "";
+		        $scope.locationObj = {};
+		        $scope.ball = { ballName: "", location: {} };
+		        $scope.balls = [];
+		        localStorage.setItem('myBalls', JSON.stringify($scope.balls));
+		    }
+		};
+
 		$scope.save = function () {
-			$scope.gettingData = true;
-		    navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 5000 });
-			$scope.ball.location = $scope.locationObj;
-			$scope.balls.push($scope.ball);
-			localStorage.setItem('myBalls',JSON.stringify($scope.balls));
-			$scope.gettingData = false;
-			
+		    if ($scope.ball.ballName) {
+		        $scope.gettingData = true;
+		        navigator.geolocation.getCurrentPosition(onSuccessAdd, onError, { timeout: 5000 });
+		    }
 		};
 
 }]);

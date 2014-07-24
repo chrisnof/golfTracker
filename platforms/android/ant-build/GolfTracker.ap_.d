@@ -43,6 +43,7 @@ C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\css\ngD
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\img\golf-ball-m.png \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\img\spinner.gif \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular-route.js \
+C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular-sanitize.min.js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular.min.js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular.min.js.map \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\index.js \

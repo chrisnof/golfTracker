@@ -1,6 +1,6 @@
 ﻿/*global angular */
 /*jshint globalstrict: true*/
-var ngApp = angular.module('ngApp', ['ngRoute','ngDialog']);
+var ngApp = angular.module('ngApp', ['ngRoute','ngSanitize','ngDialog']);
 
         
 // configure our routes
