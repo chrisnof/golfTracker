@@ -74,6 +74,10 @@ h1 {
     background: lightgrey;
     border: 2px solid #8F8A83; 
 }
+#map
+{
+    width: 100%;
+}
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {

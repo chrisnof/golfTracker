@@ -76,4 +76,10 @@ ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
 		    }
 		};
 
+		$scope.showMap = function (ball) {
+		    if (ball) {
+		        showBingMap(ball.location.lat, ball.location.log);
+		    }
+		};
+
 }]);

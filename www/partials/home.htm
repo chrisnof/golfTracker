@@ -22,7 +22,7 @@
             <span>Long.</span>
         </div>
         <div class="row" data-ng-repeat="b in balls">
-            <span>{{b.ballName}}</span>
+            <span><a href="" ng-click="showMap(b)">{{b.ballName}}</a></span>
             |
             <span>{{b.location.lat | number:4}}</span>
             |
