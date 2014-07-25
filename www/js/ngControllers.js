@@ -79,8 +79,8 @@ ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
 		$scope.showMap = function (ball) {
 		    if (ball) {
 		        $scope.ball = ball;
-		        showBingMap($scope.ball.location.lat, $scope.ball.location.log)
 		        $scope.showModal = true;
+		        showBingMap($scope.ball.location.lat, $scope.ball.location.log)
 		        //ngDialog.open({
 		        //    template: 'partials/dlgMap.htm',
 		        //    className: 'ngdialog-theme-default',
