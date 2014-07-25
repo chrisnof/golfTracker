@@ -1,8 +1,8 @@
 /*global angular */
 /*jshint globalstrict: true*/
 // create the controllers and inject Angular's $scope, etc
-ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams', 
-	function ($scope, $rootScope, $routeParams) {
+ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams', 'ngDialog',
+	function ($scope, $rootScope, $routeParams, ngDialog) {
 		$scope.gettingData = false;
 	    $scope.locationInfo = '';
 	    $scope.balls = JSON.parse(localStorage.getItem('myBalls'));
@@ -78,8 +78,21 @@ ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
 
 		$scope.showMap = function (ball) {
 		    if (ball) {
-		        showBingMap(ball.location.lat, ball.location.log);
+		        $scope.ball = ball;
+		        showBingMap($scope.ball.location.lat, $scope.ball.location.log)
+		        $scope.showModal = true;
+		        //ngDialog.open({
+		        //    template: 'partials/dlgMap.htm',
+		        //    className: 'ngdialog-theme-default',
+		        //    scope: $scope
+		        //});
 		    }
 		};
+		$scope.cancel = function () {
+		    $scope.showModal = false;
+		};
+		//$rootScope.$on('ngDialog.opened', function (e, $dialog) {
+		//    showBingMap($scope.ball.location.lat, $scope.ball.location.log);
+		//});
 
 }]);

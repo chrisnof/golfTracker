@@ -38,12 +38,14 @@ C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\index.h
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\partials \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\plugins \
+C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\css\bootstrap.min.css \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\css\index.css \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\css\ngDialog.css \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\img\golf-ball-m.png \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\img\spinner.gif \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular-route.js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular-sanitize.min.js \
+C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular-ui-bootstrap-modal.js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular.min.js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\angular.min.js.map \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\index.js \
@@ -52,7 +54,7 @@ C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\ngCo
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\ngDialog.min.js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js\ngServices.js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\partials\dlgFailure.htm \
-C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\partials\dlgValid.htm \
+C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\partials\dlgMap.htm \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\partials\edit.htm \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\partials\home.htm \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\plugins\org.apache.cordova.network-information \
