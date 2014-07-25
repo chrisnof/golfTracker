@@ -38,7 +38,7 @@ C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\index.h
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\js \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\partials \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\plugins \
-C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\css\bootstrap.min.css \
+C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\css\bootstrap.css \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\css\index.css \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\css\ngDialog.css \
 C:\Users\chris.noffke\workspace\golfTracker\platforms\android\assets\www\img\golf-ball-m.png \
