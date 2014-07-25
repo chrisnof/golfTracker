@@ -1,8 +1,8 @@
 /*global angular */
 /*jshint globalstrict: true*/
 // create the controllers and inject Angular's $scope, etc
-ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams', 'ngDialog',
-	function ($scope, $rootScope, $routeParams, ngDialog) {
+ngApp.controller('mainCtrl', ['$scope', '$rootScope', '$routeParams',
+	function ($scope, $rootScope, $routeParams) {
 		$scope.gettingData = false;
 	    $scope.locationInfo = '';
 	    $scope.balls = JSON.parse(localStorage.getItem('myBalls'));
