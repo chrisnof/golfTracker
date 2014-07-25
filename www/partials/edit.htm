@@ -1,26 +1,27 @@
 <div>
 	<div ng-if="gettingData" class="waiting"><img src="img/spinner.gif" alt="getting location..." /></br>getting location...</div>
-    <h1>Add Golf Ball Location</h1>
-	<form name="frmEdit">
-		<br/>
-		<br/>
-	    <input name="ballName" ng-model="ball.ballName" type="text" required autocomplete="off" placeholder="ball name" />
+    
+    <form name="frmEdit" class="app">
+        <h1>Add Golf Ball Location</h1>
+        <br />
+        <br />
+        <input name="ballName" ng-model="ball.ballName" type="text" required autocomplete="off" placeholder="ball name" />
         <div class="errorMsg" ng-show="frmEdit.ballName.$invalid">Ball Name is required</div>
-		<br/>
-    		<div>{{ball.location.lat}}</div>
-    		<div>{{ball.location.log}}</div>
-		<br/>
-		<br/>
-		<br/>
-	    <a href="#home" class="formAction">Back</a>
+        <br />
+        <div>{{ball.location.lat}}</div>
+        <div>{{ball.location.log}}</div>
+        <br />
+        <br />
+        <br />
+        <a href="#home" class="formAction">Back</a>
         <a href="" ng-click="save()" class="formAction">Save</a>
-		<br/>
-		<br/>
-		<br/>
-	    <a href="" ng-click="reset()" class="formAction">Reset</a>
+        <br />
+        <br />
+        <br />
+        <a href="" ng-click="reset()" class="formAction">Reset</a>
         <br />
         <br />
         <br />
         <a href="" ng-click="resetAll()" class="formAction">Remove All Balls</a>
-	</form>
+    </form>
 </div>
